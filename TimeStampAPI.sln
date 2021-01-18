@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeStampAPI", "TimeStampAPI\TimeStampAPI.csproj", "{E5ED0778-3498-448D-A540-42769E458F31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeStampAPITests", "TimeStampAPITests\TimeStampAPITests.csproj", "{FA42AD6B-BB01-4621-A724-5AD9847481D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5ED0778-3498-448D-A540-42769E458F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5ED0778-3498-448D-A540-42769E458F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5ED0778-3498-448D-A540-42769E458F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5ED0778-3498-448D-A540-42769E458F31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA42AD6B-BB01-4621-A724-5AD9847481D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA42AD6B-BB01-4621-A724-5AD9847481D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA42AD6B-BB01-4621-A724-5AD9847481D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA42AD6B-BB01-4621-A724-5AD9847481D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DDB15979-BB19-44ED-A889-335D4098A6E3}
+	EndGlobalSection
+EndGlobal
