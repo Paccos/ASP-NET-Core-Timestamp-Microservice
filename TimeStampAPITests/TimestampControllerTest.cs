@@ -2,6 +2,8 @@ using System;
 using Xunit;
 
 using TimeStampAPI.Controllers;
+using Microsoft.AspNetCore.Mvc;
+
 namespace TimeStampAPITests
 {
     public class TimestampControllerTest
@@ -51,6 +53,20 @@ namespace TimeStampAPITests
 
             Assert.Equal(expectedResult, result.Value.Utc);
         }
+
+        [Fact]
+        public void GetWithInvalidDateReturnsBadRequestAndError()
+        {
+            controllerUnderTest = new TimestampController();
+
+            var expectedResult = new { error = "Invalid Date" };
+            var result = controllerUnderTest.Get("I like cookies");
+
+            Assert.IsType<BadRequestObjectResult>(result.Result);
+
+            var objectResult = (BadRequestObjectResult)result.Result;
+
+            Assert.Equal(expectedResult.ToString(), objectResult.Value.ToString());
         }
     }
 }
