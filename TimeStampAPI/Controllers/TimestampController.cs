@@ -14,6 +14,18 @@ namespace TimeStampAPI.Controllers
     {
         // GET api/timestamp/{date_str-or-unix_epoch}
         [HttpGet("{dateStr}")]
-        public ActionResult<Timestamp> Get(string dateStr) => new Timestamp(dateStr);
+        public ActionResult<Timestamp> Get(string dateStr)
+        {
+            try
+            {
+                var timestamp = new Timestamp(dateStr);
+
+                return timestamp;
+            }
+            catch (ArgumentException)
+            {
+                return BadRequest(new { error = "Invalid Date" });
+            }
+        }
     }
 }
